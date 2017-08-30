@@ -36,9 +36,9 @@ public class BitPay {
 	private static final BitPayLogger _log = new BitPayLogger(BitPayLogger.DEBUG);
 
 	private static final String BITPAY_API_VERSION = "2.0.0";
-    private static final String BITPAY_PLUGIN_INFO = "BitPay Java Client " + BITPAY_API_VERSION;
-    public static final String BITPAY_URL = "https://bitpay.com/";
-    public static final String BITPAY_TEST_URL = "https://test.bitpay.com/";
+    private static final String BITPAY_PLUGIN_INFO = "GloBee Java Client " + BITPAY_API_VERSION;
+    public static final String BITPAY_URL = "https://globee.com/";
+    public static final String BITPAY_TEST_URL = "https://test.globee.com/";
 
     public static final String FACADE_MERCHANT = "merchant";
     public static final String FACADE_PAYROLL = "payroll";
@@ -214,7 +214,7 @@ public class BitPay {
     /**
      * Authorize this client for use with the BitPay server.
      *
-     * @param pairingCode A pairing code generated at https://bitpay.com/dashboard/merchant/api-tokens.
+     * @param pairingCode A pairing code generated at https://globee.com/api-tokens.
      * @throws BitPayException
      */
     public void authorizeClient(String pairingCode) throws BitPayException {
@@ -255,7 +255,7 @@ public class BitPay {
      * Request a pairing code from the BitPay server.
      *
      * @param facade Defines the level of API access being requested
-     * @return A pairing code for claim at https://bitpay.com/dashboard/merchant/api-tokens.
+     * @return A pairing code for claim at https://globee.com/api-tokens.
      * @throws BitPayException
      */
     public String requestClientAuthorization(String facade) throws BitPayException {
@@ -583,7 +583,7 @@ public class BitPay {
     }
 
     /**
-     * Retrieve the exchange rate table maintained by BitPay.  See https://bitpay.com/bitcoin-exchange-rates.
+     * Retrieve the exchange rate table maintained by BitPay.  See https://globee.com/
      *
      * @return A Rates object populated with the BitPay exchange rate table.
      * @throws BitPayException

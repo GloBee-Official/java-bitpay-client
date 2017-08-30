@@ -566,7 +566,7 @@ public void <B>authorizeClient</B>(java.lang.String&nbsp;pairingCode)
 <DD>Authorize this client for use with the BitPay server.
 <P>
 <DD><DL>
-<DT><B>Parameters:</B><DD><CODE>pairingCode</CODE> - A pairing code generated at https://bitpay.com/dashboard/merchant/api-tokens.
+<DT><B>Parameters:</B><DD><CODE>pairingCode</CODE> - A pairing code generated at https://globee.com/api-tokens.
 <DT><B>Throws:</B>
 <DD><CODE><A HREF="../controller/BitPayException.html" title="class in controller">BitPayException</A></CODE></DL>
 </DD>
@@ -579,11 +579,11 @@ requestClientAuthorization</H3>
 public java.lang.String <B>requestClientAuthorization</B>(java.lang.String&nbsp;facade)
                                             throws <A HREF="../controller/BitPayException.html" title="class in controller">BitPayException</A></PRE>
 <DL>
-<DD>Request a pairing code from the BitPay server.
+<DD>Request a pairing code from the GloBee server.
 <P>
 <DD><DL>
 <DT><B>Parameters:</B><DD><CODE>facade</CODE> - Defines the level of API access being requested
-<DT><B>Returns:</B><DD>A pairing code for claim at https://bitpay.com/dashboard/merchant/api-tokens.
+<DT><B>Returns:</B><DD>A pairing code for claim at https://globee.com/api-tokens.
 <DT><B>Throws:</B>
 <DD><CODE><A HREF="../controller/BitPayException.html" title="class in controller">BitPayException</A></CODE></DL>
 </DD>
@@ -826,7 +826,7 @@ getRates</H3>
 public <A HREF="../model/Rates.html" title="class in model">Rates</A> <B>getRates</B>()
                throws <A HREF="../controller/BitPayException.html" title="class in controller">BitPayException</A></PRE>
 <DL>
-<DD>Retrieve the exchange rate table maintained by BitPay.  See https://bitpay.com/bitcoin-exchange-rates.
+<DD>Retrieve the exchange rate table maintained by GloBee.  See https://globee.com.
 <P>
 <DD><DL>
 
